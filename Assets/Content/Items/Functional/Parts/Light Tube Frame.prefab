@@ -44,8 +44,8 @@ GameObject:
   - component: {fileID: 4360208311499911698}
   - component: {fileID: 3859248956662108644}
   - component: {fileID: 3214765322572920913}
-  - component: {fileID: 3016137531586242311}
-  - component: {fileID: -4916368707945548985}
+  - component: {fileID: 589702900368465779}
+  - component: {fileID: 7343507810838833725}
   - component: {fileID: 452055550092037618}
   m_Layer: 16
   m_Name: Light Tube Frame
@@ -162,7 +162,7 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 1677887020817886832, guid: c50b827f8ce281c428d83e4d145f3bbd, type: 3}
---- !u!114 &3016137531586242311
+--- !u!114 &589702900368465779
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -171,7 +171,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2647628771732637390}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8e907cf58c0ce0439d34cd7cf644216, type: 3}
+  m_Script: {fileID: 11500000, guid: 038d7157df955144c9bfec943fdd7e3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   syncMode: 0
@@ -185,7 +185,15 @@ MonoBehaviour:
   attachmentPoint: {fileID: 7714384140708836572}
   bulkSize: 3
   traits: []
---- !u!114 &-4916368707945548985
+  icon: {fileID: 21300000, guid: e1b5b9fab3120ad4c91ea3deb5197a7b, type: 3}
+  loadingBarPrefab: {fileID: 1998198171871307260, guid: 58d68fcd6d5f2c5458ad32de2270df37,
+    type: 3}
+  obstacleMask:
+    serializedVersion: 2
+    m_Bits: 32768
+  fixture: {fileID: 11400000, guid: ffb8417755080ee48998e9a4c19b22ce, type: 2}
+  highWallFixture: 1
+--- !u!114 &7343507810838833725
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -194,9 +202,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2647628771732637390}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59d174b721ba45d285a8f164a519c314, type: 3}
+  m_Script: {fileID: 11500000, guid: 671f779259184f2c984b9c017a5141df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DisplayName: Light Tube Frame
   Text: 
   MaxDistance: 0
 --- !u!114 &452055550092037618

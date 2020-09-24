@@ -8,6 +8,11 @@ namespace SS3D.Content.Systems.Construction
     public class FixtureConstructionInteraction : ConstructionInteraction
     {
         /// <summary>
+        /// Name of the construction interaction
+        /// </summary>
+        public string Name { get; set; }
+
+        /// <summary>
         /// The fixture to construct
         /// </summary>
         public Fixture Fixture { get; set; }
@@ -59,6 +64,10 @@ namespace SS3D.Content.Systems.Construction
 
         public override string GetName(InteractionEvent interactionEvent)
         {
+            if (Name != null)
+            {
+                return Name;
+            }
             return "Construct fixture";
         }
 

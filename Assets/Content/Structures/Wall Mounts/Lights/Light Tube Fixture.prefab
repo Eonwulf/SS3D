@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8213111319263450463}
   - component: {fileID: 8648403125281566512}
+  - component: {fileID: 2427602307555104371}
+  - component: {fileID: 684831034209406589}
   - component: {fileID: -5688893441080166448}
   m_Layer: 0
   m_Name: Light Tube Fixture
@@ -46,6 +48,52 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.61679196, y: 0.109075785, z: 0.22055793}
   m_Center: {x: -0.00017736852, y: 1.7806398, z: 0.28278375}
+--- !u!114 &2427602307555104371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5161561551087789900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b91ecbcc199f4492b9a91e820070131, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneId: 0
+  serverOnly: 0
+  m_AssetId: 
+  hasSpawned: 0
+--- !u!114 &684831034209406589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5161561551087789900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9444c8e5dfe9f9d4f9ec5d0e36ad65bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
+  brokenLight: {fileID: 7040954797460454911}
+  normalLight: {fileID: 5181080420812569886}
+  lightItemPrefab: {fileID: 4212875675006825677, guid: 02a9665aa50bb124087860c2640538bf,
+    type: 3}
+  lightBrokenItemPrefab: {fileID: 4482182292948660337, guid: fb94631f76c146c449de26d7c915a1f8,
+    type: 3}
+  lightFixtureItemPrefab: {fileID: 2647628771732637390, guid: d0110de4d1ecacf4bb642a560de79ba4,
+    type: 3}
+  lightInstalled: 0
+  lightBroken: 0
+  icon: {fileID: 21300000, guid: e1b5b9fab3120ad4c91ea3deb5197a7b, type: 3}
+  loadingBarPrefab: {fileID: 1998198171871307260, guid: 58d68fcd6d5f2c5458ad32de2270df37,
+    type: 3}
+  obstacleMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!114 &-5688893441080166448
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -78,7 +126,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1205637206350596522
 Transform:
   m_ObjectHideFlags: 0

@@ -41,7 +41,6 @@ namespace SS3D.Content.Systems.Interactions
             TileManager tileManager = Object.FindObjectOfType<TileManager>();
             TileObject targetTile = targetBehaviour.GameObject.GetComponentInParent<TileObject>();
             var tile = targetTile.Tile;
-
             
             if (tile.fixtures.GetFloorFixtureAtLayer(FloorFixtureLayers.FurnitureFixtureMain) != null) // If there is a fixture on the place
             {

@@ -657,6 +657,33 @@ namespace SS3D.Engine.Tiles
                 i++;
             }
         }
+
+        public int GetLayerDirectionByPlayerPosition(Vector3 playerPosition)
+        {
+            // 0 - Too far  1 - North  2 - South  3 - East  4 - West
+            int direction = 0;
+
+            Vector3 distance = (transform.position - playerPosition);
+            if (distance.z > 0 && distance.z < 1)
+            {
+                direction = 2;
+            }
+            if (distance.z < 0 && distance.z > -1)
+            {
+                direction = 1;
+            }
+            if (distance.x > 0 && distance.x < 1 && distance.x > Mathf.Abs(distance.z))
+            {
+                direction = 4;
+            }
+            if (distance.x < 0 && distance.x > -1 && Mathf.Abs(distance.x) > Mathf.Abs(distance.z))
+            {
+                direction = 3;
+            }
+
+            return direction;
+        }
+
 #if UNITY_EDITOR
         /**
          * Migrates existing fixtures that do not have a fixturelayer set.

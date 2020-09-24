@@ -21,7 +21,8 @@ namespace SS3D.Content.Items.Functional.Tools.Generic
         {
             base.CreateInteractions(targets, interactions);
             interactions.Insert(0, new InteractionEntry(targets[0], new TableConstructionInteraction
-            {       TableToConstruct = TableToConstruct, 
+            {
+                TableToConstruct = TableToConstruct, 
                 Delay = Delay, 
                 LoadingBarPrefab = LoadingBarPrefab,
                 icon = constructIcon,
